@@ -1,0 +1,65 @@
+@mixin estilo-botao-padrao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+}
+
+@mixin estilo-botao-voltar {
+    height: 35px;
+
+    border: 2px solid #74a1ed;
+    border-radius: 8px;
+
+    color: var(--cor-texto);
+    background-color: #fff;
+
+    margin: 0 2.5px;
+
+    transition: all .4s;
+
+    cursor: pointer;
+}
+
+$breakpoints: (
+    xxl: 1420px,
+    hd: 1366px,
+    desktop: 1024px,
+    tablet: 768px,
+    mobile: 480px
+);
+
+@mixin respond-to($size) {
+    @if map-has-key($breakpoints, $size) {
+        @media (max-width: map-get($breakpoints, $size)) {
+            @content;
+        }
+    } @else {
+        @warn "Unknown breakpoint `#{$size}`. Add it to $breakpoints first.";
+    }
+}
+
+@mixin flex-center($direction: row, $justify: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin animacao-subida {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
