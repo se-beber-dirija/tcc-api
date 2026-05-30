@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Senha</title>
+    <link rel="icon" type="image/x-icon"
+        href="../../midia/Imagens/92885741-árvore-branca-no-fundo-preto-design-vetorial-e-elemento-gráfico-Picsart-BackgroundRemover1-Picsart-BackgroundRemover.jpg">
+    <link rel="stylesheet" href="../../CSS/paginaSenha/styleSenha.css">
+    <link rel="stylesheet" href="../../CSS/Global/globalStyle.css">
+    <link rel="stylesheet" href="../../CSS/Componentes/botaoBlob.css">
+    <link rel="stylesheet" href="../../CSS/Componentes/floatLabel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="tudo">
+
+        <div id="box-principal">
+
+
+            <div id="box-direita">
+
+                <div id="header-box-direita">
+
+                    <div id="botao-titulo">
+                        <button id="botao-voltar" type="button" style="margin: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m7.76 14.83-2.83 2.83 1.41 1.41 2.83-2.83 2.12-2.12.71-.71.71.71 1.41 1.42 3.54 3.53 1.41-1.41-3.53-3.54-1.42-1.41-.71-.71 5.66-5.66-1.41-1.41L12 10.59 6.34 4.93 4.93 6.34 10.59 12l-.71.71z">
+                                </path>
+                            </svg></button>
+
+                        <h1 class="fonte-josefin" style="font-weight: 300; font-size: 25px; margin: 15px;">TonJunFort
+                        </h1>
+                    </div>
+
+                    <h1 style="justify-self: center;" class="fonte-josefin bold">
+                        Troca de senha
+                    </h1>
+
+                </div>
+
+                <form id="box-senha" method="post">
+
+                    <span class="fonte-josefin">
+                        Informe o seu email para o código ser enviado
+                    </span>
+
+                    <div id="campo-1" class="campos-inputs fonte-cor campos-displays has-float-label">
+
+                        <input class="inputs align-self-inputs" type="email" name="email" id="email" required>
+                        <label for="email" class="fonte-josefin labels-margin label-nome">Email Pessoal</label>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail-icon lucide-mail">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                        </svg>
+                    </div>
+
+                </form>
+
+
+                <div class="buttons" style="margin-bottom: 60px;">
+
+                    <button id="entrar-btn" class="blob-btn" type="submit">
+                        Acessar
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <br />
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10">
+                                </feGaussianBlur>
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
+                                </feColorMatrix>
+                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                            </filter>
+                        </defs>
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../../JS/Paginas/Voltar/botaoVoltar.js"></script>
+</body>
+
+</html>

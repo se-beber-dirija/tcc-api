@@ -1,0 +1,27 @@
+{
+    "liveSassCompile.settings.formats": [
+    
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePathReplacementPairs": {
+                "/SCSS/": "/CSS/"
+            }
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "github.copilot.nextEditSuggestions.eagerness": "low",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "html": false
+    },
+    "http.proxyStrictSSL": false,
+    "chat.viewSessions.orientation": "stacked"
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="../../CSS/Homepage/styleHomepage.css">
+    <link rel="stylesheet" href="../../CSS/Homepage/conteudoPerfil.css">
+    <link rel="stylesheet" href="../../CSS/Global/globalStyle.css">
+    <link rel="stylesheet" href="../../CSS/Componentes/botaoBurguer.css">
+    <link rel="stylesheet" href="../../CSS/Componentes/dropdownProfile.css">
+    <link rel="stylesheet" href="../../CSS/Componentes/expandBotao.css">
+    <link rel="stylesheet" href="../../CSS/Componentes/barraPesquisa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="box-principal">
+
+        <header id="cabecalho">
+
+            <div id="box-logo" class="holographic-container">
+                <div class="holographic-card">
+                    <img src="../../midia/Imagens/ArvoreBranca.jpg" alt="">
+                    <span> TonJunFort</span>
+                </div>
+            </div>
+
+            <div id="box-pesquisa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search-icon lucide-search">
+                    <path d="m21 21-4.34-4.34" />
+                    <circle cx="11" cy="11" r="8" />
+                </svg>
+
+                <input type="text" id="barra-de-pesquisa" placeholder="Buscar... ">
+            </div>
+
+
+            <div id="box-perfil-notificacao">
+
+                <button id="notificacoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-bell-icon lucide-bell">
+                        <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                        <path
+                            d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+                    </svg>
+                </button>
+
+                <button id="acesso-perfil" class="dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user-round-icon lucide-user-round">
+                        <circle cx="12" cy="8" r="5" />
+                        <path d="M20 21a8 8 0 0 0-16 0" />
+                    </svg>
+
+                    <span>Perfil</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+
+                    <div class="dropdown-content">
+
+                        <div style="padding: 7px;" id="">
+                            <div class="content-box">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-square-pen-icon lucide-square-pen">
+                                        <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                        <path
+                                            d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" />
+                                    </svg>
+
+                                    Ver perfil
+                                </a>
+                            </div>
+
+                            <div class="content-box">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-cog-icon lucide-cog">
+                                        <path d="M11 10.27 7 3.34" />
+                                        <path d="m11 13.73-4 6.93" />
+                                        <path d="M12 22v-2" />
+                                        <path d="M12 2v2" />
+                                        <path d="M14 12h8" />
+                                        <path d="m17 20.66-1-1.73" />
+                                        <path d="m17 3.34-1 1.73" />
+                                        <path d="M2 12h2" />
+                                        <path d="m20.66 17-1.73-1" />
+                                        <path d="m20.66 7-1.73 1" />
+                                        <path d="m3.34 17 1.73-1" />
+                                        <path d="m3.34 7 1.73 1" />
+                                        <circle cx="12" cy="12" r="2" />
+                                        <circle cx="12" cy="12" r="8" />
+                                    </svg>
+
+                                    Configurações
+                                </a>
+                            </div>
+
+                            <div class="content-box">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out"
+                                        style="color: rgb(253, 52, 52);">
+                                        <path d="m16 17 5-5-5-5" />
+                                        <path d="M21 12H9" />
+                                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                                    </svg>
+
+                                    Sair
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </button>
+
+            </div>
+
+        </header>
+
+        <div id="box-direita">
+
+            <div id="box-conteudo">
+
+                <div id="Perfil">
+
+                    <main id="main-perfil">
+
+                        <section id="perfil-card">
+
+                            <div class="perfil-card-header">
+                                <div>
+                                    <span>Meu Perfil</span>
+                                    <p>Atualize seus dados e sua foto.</p>
+                                </div>
+                            </div>
+
+                            <form id="avatar-upload" action="/upload-avatar" method="POST"
+                                enctype="multipart/form-data">
+
+                                <div id="foto-perfil">
+                                    <span>Foto de Perfil</span>
+                                    <img id="avatar-image" src="../../midia/Imagens/icon-7797704_640.png"
+                                        alt="Foto de perfil do usuário">
+                                </div>
+
+                                <div id="mudar-foto">
+                                    <label for="upload-avatar" class="botao-upload-customizado">
+                                        Alterar foto de perfil
+                                    </label>
+                                    <input class="fonte-josefin" type="file" id="upload-avatar" name="avatar"
+                                        accept="image/png, image/jpeg">
+                                </div>
+
+                            </form>
+                        </section>
+
+                        <section id="perfil-detalhes">
+
+                            <div class="detalhes-card">
+
+                                <div class="detalhes-card-header">
+                                    <h2>Informações</h2>
+                                    <p>Dados cadastrados no perfil.</p>
+                                </div>
+
+                                <div class="info-group">
+
+                                    <div class="info-item">
+                                        <span>Nome</span>
+                                        <p id="profile-name">Seu nome completo</p>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <span>Sou...</span>
+                                        <h3 id="profile-role">Voluntário</h3>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <span>E-mail</span>
+                                        <p id="profile-email">usuario@exemplo.com</p>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <span>Telefone</span>
+                                        <p id="profile-phone">(00) 00000-0000</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        <section id="perfil-config">
+
+                            <div class="perfil-config-card">
+
+                                <div class="config-card-header">
+                                    <h2>Configurações</h2>
+                                    <p>Ajustes rápidos do perfil.</p>
+                                </div>
+
+                                <div class="config-list">
+
+                                    <div class="recentes config-item">
+                                        <span>Notificações</span>
+                                        <svg class="seta-baixo" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </div>
+                                    <div class="dropdown-items" id="dropdown-perfil-notificacoes" style="display: none;">
+                                        <div class="dropdown-item"></div>
+                                        <div class="dropdown-item"></div>
+                                    </div>
+
+
+                                    <div class="recentes config-item">
+                                        <span>Privacidade</span>
+                                        <svg class="seta-baixo" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="dropdown-items" id="dropdown-perfil-privacidade" style="display: none;">
+                                        <div class="dropdown-item"></div>
+                                        <div class="dropdown-item"></div>
+                                    </div>
+
+                                    <div class="recentes config-item" data-dropdown="perfil-config">
+                                        <span>Mais opções</span>
+                                        <svg class="seta-baixo" xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="dropdown-items" id="dropdown-perfil-config" style="display: none;">
+                                        <div class="dropdown-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 5v14" />
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                            <span>Alterar senha</span>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 5v14" />
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                            <span style="color: red;">Excluir Conta</span>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 3v18" />
+                                                <path d="M3 12h18" />
+                                            </svg>
+                                            <span>Configurações de privacidade</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        <section id="perfil-cadastros">
+
+                            <div class="perfil-cadastros-card">
+
+                                <div class="escolas-cadastradas">
+                                    <h2 id="school-section-title">Escolas Cadastradas</h2>
+                                    <div id="schools-list"></div>
+                                </div>
+
+
+                            </div>
+
+                        </section>
+
+                    </main>
+
+                </div>
+
+            </div>
+
+
+            <nav id="sidebar">
+
+                <div id="hamburger" class="hamburglar is-open">
+
+                    <div class="burger-icon">
+                        <div class="burger-container">
+                            <span class="burger-bun-top"></span>
+                            <span class="burger-filling"></span>
+                            <span class="burger-bun-bot"></span>
+                        </div>
+                    </div>
+
+                    <div class="burger-ring">
+                        <svg class="svg-ring">
+                            <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                                d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                        </svg>
+                    </div>
+
+                    <svg width="0" height="0">
+                        <mask id="mask">
+                            <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                                stroke-width="4"
+                                d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                        </mask>
+                    </svg>
+                    <div class="path-burger">
+                        <div class="animate-path">
+                            <div class="path-rotation"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="sidebar-links">
+
+                    <button class="expand" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-house-icon lucide-house svgs">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                            <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        </svg>
+                        <span class="link-text">Inicio</span>
+                        <span class="expand-icon expand-hover">
+                            <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 32 32"
+                                version="1.1">
+                                <path
+                                    d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <button class="expand" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-clipboard-list-icon lucide-clipboard-list svgs">
+                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                            <path d="M12 11h4" />
+                            <path d="M12 16h4" />
+                            <path d="M8 11h.01" />
+                            <path d="M8 16h.01" />
+                        </svg>
+                        <span class="link-text">Cadastros</span>
+                        <span class="expand-icon expand-hover">
+                            <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 32 32"
+                                version="1.1">
+                                <path
+                                    d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <button class="expand" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-school-icon lucide-school svgs">
+                            <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                            <path d="M18 4.933V21" />
+                            <path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6" />
+                            <path
+                                d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11" />
+                            <path d="M6 4.933V21" />
+                            <circle cx="12" cy="9" r="2" />
+                        </svg>
+                        <span class="link-text">Escolas</span>
+                        <span class="expand-icon expand-hover">
+                            <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 32 32"
+                                version="1.1">
+                                <path
+                                    d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <button class="expand" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-hand-heart-icon lucide-hand-heart svgs">
+                            <path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" />
+                            <path
+                                d="m14.45 13.39 5.05-4.694C20.196 8 21 6.85 21 5.75a2.75 2.75 0 0 0-4.797-1.837.276.276 0 0 1-.406 0A2.75 2.75 0 0 0 11 5.75c0 1.2.802 2.248 1.5 2.946L16 11.95" />
+                            <path d="m2 15 6 6" />
+                            <path
+                                d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a1 1 0 0 0-2.75-2.91" />
+                        </svg>
+                        <span class="link-text">Doações</span>
+                        <span class="expand-icon expand-hover">
+                            <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 32 32"
+                                version="1.1">
+                                <path
+                                    d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <button class="expand" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-bell-icon lucide-bell svgs">
+                            <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                            <path
+                                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+                        </svg>
+                        <span class="link-text">Notificações</span>
+                        <span class="expand-icon expand-hover">
+                            <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 32 32"
+                                version="1.1">
+                                <path
+                                    d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
+                            </svg>
+                        </span>
+                    </button>
+
+                </div>
+
+                <div id="linha-de-separação"></div>
+
+                <div class="recentes" data-dropdown="perfis">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-clock-icon lucide-clock">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 6v6l4 2" />
+                    </svg>
+
+                    <span>Perfis Recentes</span>
+
+                    <svg class="seta-baixo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+
+                <div class="dropdown-items" id="dropdown-perfis" style="display: none;">
+                    <div class="dropdown-item">
+                        <img src="../../midia/Imagens/photo-1569937301527-9336e27c357c.avif" alt="Perfil 1">
+                        <span>João Silva</span>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="../../midia/Imagens/photo-1588287055455-9fb0ca7a2d02.avif" alt="Perfil 2">
+                        <span>Maria Santos</span>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="../../midia/Imagens/photo-1610116306796-6fea9f4fae38.avif" alt="Perfil 3">
+                        <span>Carlos Oliveira</span>
+                    </div>
+                </div>
+
+                <div id="linha-de-separação"></div>
+
+                <div class="recentes" data-dropdown="escolas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-clock-icon lucide-clock">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 6v6l4 2" />
+                    </svg>
+
+                    <span>Escolas Recentes</span>
+
+                    <svg class="seta-baixo" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+
+                <div class="dropdown-items" id="dropdown-escolas" style="display: none;">
+                    <div class="dropdown-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6m0 0a8 8 0 1 1-16 0 8 8 0 0 1 16 0z" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                        <span>ETEC-Main</span>
+                    </div>
+                    <div class="dropdown-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6m0 0a8 8 0 1 1-16 0 8 8 0 0 1 16 0z" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                        <span>Escola Secundária</span>
+                    </div>
+                    <div class="dropdown-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6m0 0a8 8 0 1 1-16 0 8 8 0 0 1 16 0z" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                        <span>Instituto Técnico</span>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <script src="../../JS/Homepage/userSession.js"></script>
+    <script src="../../JS/Homepage/meuPerfil.js"></script>
+    <script src="../../JS/Homepage/Animações/animacaoBotao.js"></script>
+    <script src="../../JS/Homepage/Animações/botaoBurguer.js"></script>
+    <script src="../../JS/Homepage/Animações/dropdown.js"></script>
+    <script src="../../JS/Homepage/navegacaoSidebar.js"></script>
+    <script src="../../JS/Homepage/pesquisa.js"></script>
+</body>
+
+</html>

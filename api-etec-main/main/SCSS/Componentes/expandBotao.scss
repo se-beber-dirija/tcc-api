@@ -1,0 +1,57 @@
+.expand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    right: 0;
+    height: 100%;
+    height: var(--button-height);
+    width: var(--button-height);
+
+    --icon-size: 10px;
+    border-left: 2px solid #eee;
+    transform: translateX(calc(var(--button-height) + 1px));
+    transition: transform 0.3s;
+}
+
+.expand-icon>svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+    transform: scale(1.5);
+    transition: transform 0.3s;
+}
+
+button.expand:hover,
+button.expand.loading {
+    padding-right: calc(25px + var(--button-height));
+}
+
+button.expand:hover>.expand-icon,
+button.expand.loading>.expand-icon {
+    transform: translateX(0);
+    transition: transform 0.3s 0.05s;
+}
+
+// HTML do Botao-Expand
+
+/*
+
+<button class="expand" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-house-icon lucide-house svgs">
+        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+        <path
+            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+    </svg>
+    <span class="link-text">Inicio</span>
+    <span class="expand-icon expand-hover">
+        <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 32 32" version="1.1">
+            <path
+                d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
+        </svg>
+    </span>
+</button>
+
+*/

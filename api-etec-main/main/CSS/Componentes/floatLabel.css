@@ -1,0 +1,47 @@
+.has-float-label {
+  position: relative;
+}
+
+.has-float-label .inputs {
+  width: 100%;
+  padding: 18px 40px 10px 12px;
+  background: #f3f9ff;
+  border: 2px solid #b8d9f0;
+  border-radius: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+}
+
+.has-float-label label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+  color: #6b6b6b;
+  pointer-events: none;
+  background: transparent;
+  padding: 0 4px;
+}
+
+.has-float-label .inputs:focus + label,
+.has-float-label .inputs:valid + label {
+  top: 8px;
+  transform: translateY(0);
+  font-size: 0.84rem;
+  color: var(--cor-primaria);
+}
+
+.has-float-label svg,
+.has-float-label .input-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--cor-texto);
+  pointer-events: none;
+}

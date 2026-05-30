@@ -1,0 +1,477 @@
+:root {
+  --fonte-principal: 'Josefin Sans', sans-serif;
+  --peso-fonte: 700;
+  --cor-mais-escura: #1a3a6b;
+  --cor-escura: #2d5fb5;
+  --cor-primaria: #5095f0;
+  --cor-clara: #74a1ed;
+  --cor-mais-clara: #d4e4fc;
+  --azul-1: #74a1ed;
+  --cor-texto: #3f3b3b;
+  --cor-fundo: #f4f5f7;
+  --cor-fundo2: #f4f5f7;
+  --cor-bordas-inputs: #b8d9f0;
+  --cor1-header: #2c78e7;
+  --cor2-header: rgb(15 104 193);
+  --cor3-header: rgb(38 111 185);
+  --tamanho-titulo: 25px;
+}
+
+#box-direita #box-conteudo-escola {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--fonte-principal);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#box-direita #box-conteudo-escola::-webkit-scrollbar {
+  width: 7px;
+}
+#box-direita #box-conteudo-escola::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+#box-direita #box-conteudo-escola::-webkit-scrollbar-thumb {
+  background: #5095f0;
+  border-radius: 4px;
+}
+#box-direita #box-conteudo-escola::-webkit-scrollbar-thumb:hover {
+  background: #2d5fb5;
+}
+#box-direita #box-conteudo-escola #header-conteudo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 96%;
+}
+#box-direita #box-conteudo-escola #header-conteudo #titulo-esquerda {
+  width: 20%;
+  padding: 13px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: var(--cor-mais-escura);
+}
+#box-direita #box-conteudo-escola #header-conteudo #titulo-esquerda span {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+}
+#box-direita #box-conteudo-escola #header-conteudo #titulo-direita {
+  width: 79%;
+  background: rgba(129, 183, 255, 0.2);
+  border: 1px solid rgba(80, 149, 240, 0.18);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#box-direita #box-conteudo-escola #escolas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+  align-items: normal;
+  flex: 1 1 auto;
+  min-height: auto;
+  width: 96%;
+  border: 1px solid rgba(80, 149, 240, 0.18);
+  border-top: 4px solid var(--cor-escura);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  height: auto;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  height: auto;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola {
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: normal;
+  align-items: center;
+  width: min(560px, 100%);
+  min-height: 52px;
+  height: auto;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola:has(input:not(:-moz-placeholder)) svg {
+  opacity: 1;
+  transform: scale(1);
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola:has(input:focus) svg, #box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola:has(input:not(:placeholder-shown)) svg {
+  opacity: 1;
+  transform: scale(1);
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola svg {
+  position: absolute;
+  left: 20px;
+  height: 24px;
+  width: 24px;
+  color: var(--cor-escura);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola input {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: var(--fonte-principal);
+  box-sizing: border-box;
+  border: 2px solid rgba(80, 149, 240, 0.699);
+  border-radius: 25px;
+  background: #fff;
+  padding: 15px 20px;
+  transition: 0.4s ease;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola input:not(:-moz-placeholder) {
+  border: 2px solid var(--cor-escura);
+  outline: none;
+  caret-color: var(--cor-escura);
+  padding: 15px 20px 15px 55px;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola input:focus, #box-direita #box-conteudo-escola #escolas #box-funcoes #pesquisar-adicionar #pesquisa-escola input:not(:placeholder-shown) {
+  border: 2px solid var(--cor-escura);
+  outline: none;
+  caret-color: var(--cor-escura);
+  padding: 15px 20px 15px 55px;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  min-height: 52px;
+  height: auto;
+  width: 22%;
+  font-family: var(--fonte-principal);
+  background: var(--linear-gradient-1);
+  border: 1.5px solid var(--azul-1);
+  border-radius: 10px;
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes button:hover {
+  box-shadow: inset 0 2.5em 0em 0em #fff, inset 0 -2.5em 0em 0em #fff;
+  border: 1.5px solid var(--azul-1);
+  background-color: #fff;
+  color: var(--azul-1);
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes button .link-text {
+  opacity: 0;
+  width: 0;
+  visibility: hidden;
+  margin: 0;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes button .expand-icon {
+  display: none;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes button svg {
+  height: 33px;
+  width: 33px;
+}
+#box-direita #box-conteudo-escola #escolas #box-funcoes button span {
+  font-size: 24px;
+}
+#box-direita #box-conteudo-escola #escolas #box-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: normal;
+  flex-wrap: wrap;
+  gap: 18px 24px;
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tag-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tag-dropdown {
+  position: absolute;
+  z-index: 9999;
+  background: #ffffff;
+  border: 1px solid rgba(28, 54, 102, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 18px 35px rgba(13, 37, 86, 0.12);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+  width: -moz-max-content;
+  width: max-content;
+  transform-origin: top left;
+  will-change: transform, opacity;
+  animation: dropdownEnter 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tag-dropdown .tag-dropdown-item {
+  background: transparent;
+  border: none;
+  text-align: left;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 0;
+  width: 100%;
+  color: #1c2f56;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tag-dropdown .tag-dropdown-item:hover {
+  background: rgba(116, 161, 237, 0.14);
+  color: #0f1f47;
+  transform: translateX(4px);
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tag-dropdown .tag-dropdown-item + .tag-dropdown-item {
+  border-top: 1px solid rgba(28, 54, 102, 0.08);
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 170px;
+  min-width: 170px;
+  max-width: 280px;
+  height: auto;
+  background: linear-gradient(135deg, #5687f1 0%, #76b7ff 100%);
+  color: #ffffff;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  outline: none;
+  padding: 14px 20px;
+  gap: 10px;
+  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+  cursor: pointer;
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tags svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.92;
+  transition: transform 180ms ease;
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tags:hover, #box-direita #box-conteudo-escola #escolas #box-tags .tags:focus-visible {
+  transform: translateY(-1px);
+  color: #fff;
+  box-shadow: 0 16px 30px rgba(57, 113, 233, 0.12);
+  background: linear-gradient(135deg, #4f78f4 0%, #93c0ff 100%);
+}
+#box-direita #box-conteudo-escola #escolas #box-tags .tags:active {
+  transform: translateY(0);
+}
+#box-direita #box-conteudo-escola #cards-escolas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: stretch;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#box-direita #box-conteudo-escola #cards-escolas #card-aviso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px dashed var(--cor-texto);
+  border-radius: 10px;
+  width: 100%;
+  min-height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+#box-direita #box-conteudo-escola #cards-escolas #card-aviso .aviso-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+#box-direita #box-conteudo-escola #cards-escolas #card-aviso .aviso-conteudo span {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--cor-texto);
+  line-height: 1.4;
+}
+#box-direita #box-conteudo-escola #cards-escolas #card-aviso svg {
+  height: 33px;
+  width: 33px;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+  width: 100%;
+  max-width: 340px;
+  min-height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 12px 35px rgba(23, 63, 120, 0.14);
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  box-sizing: border-box;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .header-cards {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  background-color: var(--cor-mais-escura);
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .header-cards img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info {
+  width: 100%;
+  padding: 22px;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info .card-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info .card-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--cor-mais-escura);
+  line-height: 1.1;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info .card-status {
+  font-size: 14px;
+  color: #556e97;
+  line-height: 1.5;
+  max-width: 95%;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info .card-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background-color: rgba(80, 149, 240, 0.12);
+  color: var(--cor-mais-escura);
+  font-size: 13px;
+  font-weight: 700;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+  align-items: stretch;
+  list-style-type: none;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info ul li {
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--cor-texto);
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info ul li .card-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 140px;
+  background-color: rgba(80, 149, 240, 0.15);
+  border-radius: 16px;
+  padding: 12px 14px;
+  color: var(--cor-mais-escura);
+  gap: 12px;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info ul li .card-question svg {
+  height: 24px;
+  width: 24px;
+  color: var(--cor-mais-escura);
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info ul li .tag-li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background-color: rgba(80, 149, 240, 0.12);
+  color: var(--cor-mais-escura);
+  font-weight: 700;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info .card-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 18px;
+  padding: 16px 18px;
+  gap: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--cor-escura), var(--cor-primaria));
+  color: #fff;
+  font-family: var(--fonte-principal);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info .card-action .link-text {
+  font-size: 18px;
+}
+#box-direita #box-conteudo-escola #cards-escolas .card-escolas-base .cards-info .card-action .expand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes dropdownEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
