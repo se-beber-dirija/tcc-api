@@ -1,3 +1,0 @@
-Alguns componentes estão apenas em CSS para evitar problemas (floatLabel.css por exemplo)
-
-Esses podem ser acessados na pasta em Componentes na pasta CSS par modificações
