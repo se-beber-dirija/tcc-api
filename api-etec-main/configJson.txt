@@ -1,5 +1,16 @@
+// Arquivo para alterar o formato de compilação do SASS/SCSS
+// para uso - 
+// 1. instale o Live Sass Compiler em Extensões
+// 2. vá para Configurações (No VSCode)
+// 3. Pesquise por "Live sass"
+// 4. Procure por "Settings: Formats"
+// 5. Copie e Cole o código abaixo e salve (ctrl + s) o arquivo
+// 6. Feche o JSON
+
+// Se caso a cor/tema do seu VSCode mudar, é por causa desse código, mas é só mudar em "themes" caso voce nn tenha gostado da cor q ficou
+
 {
-    "liveSassCompile.settings.formats": [
+    " liveSassCompile.settings.formats": [
     
         {
             "format": "expanded",
